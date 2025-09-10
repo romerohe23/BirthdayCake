@@ -91,7 +91,6 @@ public class CakeView extends SurfaceView {
      * onDraw is like "paint" in a regular Java program.  While a Canvas is
      * conceptually similar to a Graphics in javax.swing, the implementation has
      * many subtle differences.  Show care and read the documentation.
-     *
      * This method will draw a birthday cake
      */
     @Override
