@@ -34,6 +34,9 @@ public class CakeView extends SurfaceView {
     public static final float outerFlameRadius = 30.0f;
     public static final float innerFlameRadius = 15.0f;
 
+    private CakeModel model;
+
+
 
 
     /**
@@ -42,6 +45,9 @@ public class CakeView extends SurfaceView {
      */
     public CakeView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        // intilization of CakeModel
+        model = new CakeModel();
+
 
         //This is essential or your onDraw method won't get called
         setWillNotDraw(false);
@@ -62,6 +68,10 @@ public class CakeView extends SurfaceView {
 
         setBackgroundColor(Color.WHITE);  //better than black default
 
+    }
+    // Accessor or... (getter)
+    public CakeModel getModel() {
+        return model;
     }
 
     /**
@@ -126,6 +136,8 @@ public class CakeView extends SurfaceView {
 
 
     }//onDraw
+
+
 
 }//class CakeView
 
