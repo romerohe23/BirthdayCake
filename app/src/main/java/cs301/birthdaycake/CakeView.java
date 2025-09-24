@@ -132,9 +132,11 @@ public class CakeView extends SurfaceView {
 
         //Now a candle in the center
         //2 candles equidistant
-        drawCandle(canvas, cakeLeft + (cakeWidth * ((float) 1 /4)) - candleWidth/2, cakeTop);
-        drawCandle(canvas, cakeLeft + (cakeWidth * ((float) 3 /4)) - candleWidth/2, cakeTop);
 
+        if (model.hasCandles && model.numCandles > 0) {
+            drawCandle(canvas, cakeLeft + (cakeWidth * ((float) 1 / 4)) - candleWidth / 2, cakeTop);
+            drawCandle(canvas, cakeLeft + (cakeWidth * ((float) 3 / 4)) - candleWidth / 2, cakeTop);
+        }
 
 
     }//onDraw
